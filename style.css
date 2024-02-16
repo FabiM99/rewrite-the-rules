@@ -1,0 +1,19 @@
+:root{
+    --main-bg-color: red;
+    --main-background-color: blue;
+    --main-width: 500px;
+    --main-height: 300px;
+    --main-border-radius: 30px
+}
+
+body {
+    background-color:var(--main-bg-color, yellow);
+}
+
+.ball {
+    width: var(--main-width, 100px); /*lascio il valore a 100 cosi in caso di modifiche, non vado a cambiare il main modificando tutte le parti del codice che utilizzano la stessa variabile*/
+    height: var(--main-height, 100px);
+    background-color:var(--main-background-color);
+    border-radius: var(--main-border-radius);
+}
+
